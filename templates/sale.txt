@@ -1,0 +1,16 @@
+From: {{from}}
+To: {{email}}
+Subject: {{test_prefix}}Your {{product_name}} is ready
+Date: {{date}}
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+X-Gumroad-Sale-Id: {{sale_id}}
+X-Gumroad-Resource: sale
+X-Unsent: true
+
+Hi {{greeting_name}},
+
+Thank you for buying {{product_name}}.
+Sale {{sale_id}} is recorded for {{price_display}} {{currency}} (quantity {{quantity}}, order {{order_number}}).
+
+This message was not sent.

@@ -1,0 +1,25 @@
+{
+  "name": "gumroad-sale-webhook",
+  "version": "1.0.0",
+  "description": "Local HTTP service that receives Gumroad Ping sale and refund notifications, deduplicates them, and writes a CSV ledger plus unsent buyer emails.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "gumroad-sale-webhook": "./dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js serve",
+    "replay": "node dist/src/cli.js replay --fixtures fixtures",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json && node --enable-source-maps --test --test-reporter spec dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

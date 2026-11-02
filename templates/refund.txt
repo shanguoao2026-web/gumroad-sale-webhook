@@ -1,0 +1,16 @@
+From: {{from}}
+To: {{email}}
+Subject: {{test_prefix}}Refund recorded for {{product_name}}
+Date: {{date}}
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+X-Gumroad-Sale-Id: {{sale_id}}
+X-Gumroad-Resource: refund
+X-Unsent: true
+
+Hi {{greeting_name}},
+
+A refund was recorded for {{product_name}}.
+Sale {{sale_id}} reverses {{price_display}} {{currency}} in the local ledger.
+
+This message was not sent.
